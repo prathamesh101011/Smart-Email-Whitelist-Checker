@@ -1,0 +1,22 @@
+{
+  "timeZone": "Asia/Kolkata",
+  "runtimeVersion": "V8",
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/gmail.readonly",
+    "https://www.googleapis.com/auth/script.external_request",
+    "https://www.googleapis.com/auth/gmail.addons.execute",
+    "https://www.googleapis.com/auth/userinfo.email"
+  ],
+  "addOns": {
+    "common": {
+      "name": "AI Spam Analyzer",
+      "logoUrl": "https://img.freepik.com/premium-psd/email-security-yellow-envelope-with-shield-icon_471402-812.jpg?semt=ais_hybrid"
+    },
+    "gmail": {
+      "contextualTriggers": [{
+        "unconditional": {},
+        "onTriggerFunction": "onGmailMessageOpen"
+      }]
+    }
+  }
+}
